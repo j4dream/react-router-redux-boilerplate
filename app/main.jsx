@@ -1,8 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import AppRouter from './router'
+import AppRoot from './containers/AppRoot'
+
+import configureStore from './store/configureStore'
+
+let store = configureStore()
 
 ReactDOM.render(
-	<AppRouter/>,
+	<AppRoot store={store}/>,
 	document.body.appendChild(document.createElement('div'))
 );
