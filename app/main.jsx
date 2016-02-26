@@ -1,8 +1,8 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './components/app';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import AppRouter from './router'
 
 ReactDOM.render(
-	<App/>,
+	<AppRouter/>,
 	document.body.appendChild(document.createElement('div'))
 );

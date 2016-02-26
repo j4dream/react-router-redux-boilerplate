@@ -1,17 +1,16 @@
-import React from 'react';
-import {createStore} from 'redux';
+import React from 'react'
 import { Router, Route, browserHistory, IndexRoute } from 'react-router'
-import {Provider} from 'react-redux';
+import {Provider} from 'react-redux'
 
-import appReducers from '../reducers'
-
-import Layout from './layout'
-import Home from './home';
+import Layout from '../components/layout'
+import Home from '../components/home'
 import Campaigns from '../containers/campaigns'
 
-let store = createStore(appReducers);
+import configureStore from '../store/configureStore'
 
-export default class App extends React.Component {
+let store = configureStore()
+
+export default class AppRouter extends React.Component {
   constructor(props) {
     super(props);
   }
@@ -26,6 +25,6 @@ export default class App extends React.Component {
           </Route>
         </Router>
       </Provider>
-    );
+    )
   }
 }
