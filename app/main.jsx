@@ -1,8 +1,6 @@
 import "babel-polyfill";
 import React from 'react';
 import ReactDOM from 'react-dom';
-import AppRoot from './containers/AppRoot';
-import configureStore from './store/configureStore';
 
 import { createStore, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
