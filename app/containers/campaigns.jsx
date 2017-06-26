@@ -1,7 +1,7 @@
 import React from 'react';
 import { AddCampaigns, CampaignLists } from '../components/campaigns';
 import { addCampaign } from '../actions';
-import {connect} from 'react-redux'
+import { connect } from 'react-redux';
 
 @connect(store => ({
     campaigns: store.campaigns

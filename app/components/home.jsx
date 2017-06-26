@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Home extends React.Component {
+export default class Home extends React.Component {
 	constructor(props) {
 	super(props);
 		this.displayName = 'Home';
@@ -9,5 +9,3 @@ class Home extends React.Component {
 		return <div>Home Component</div>;
 	}
 }
-
-export default Home;

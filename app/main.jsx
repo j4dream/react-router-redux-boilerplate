@@ -7,7 +7,8 @@ import thunk from 'redux-thunk';
 import rootReducer from './reducers';
 
 import { Provider } from 'react-redux';
-import { Router, browserHistory } from 'react-router';
+import { BrowserRouter } from 'react-router-dom';
+import Layout from './containers/Layout';
 
 import routes from './router';
 
@@ -18,7 +19,7 @@ const store = createStore(
 
 ReactDOM.render(
 	<Provider store={store}>
-		<Router history={browserHistory} routes={routes}/>
+		<BrowserRouter children={Layout} />
 	</Provider>,
 	document.body.appendChild(document.createElement('div'))
 );
